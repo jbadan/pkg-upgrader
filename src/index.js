@@ -126,6 +126,8 @@ function printTip(settings) {
 }
 
 function applyCodemods(settings) {
+	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>          apply codemods')
+	console.log(settings)
 	if (!settings.files || settings.files.length === 0) {
 		return Promise.resolve(settings);
 	}
